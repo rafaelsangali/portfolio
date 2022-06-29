@@ -4,7 +4,7 @@ import { LoadingScreen } from "./Pages/LoadingScreen"
 
 function App() {
   return (
-    <main className="flex">
+    <main className="md:flex">
       <Sidebar />
       <LoadingScreen />
     </main>

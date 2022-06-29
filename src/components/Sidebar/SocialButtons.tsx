@@ -7,7 +7,7 @@ interface SocialButtonsProps {
 export function SocialButtons(props: SocialButtonsProps){
   return(
     <a 
-        className="transition duration-500 hover:scale-150 hover:text-green-600 "
+        className="transition duration-500 hover:scale-150 hover:text-cyan-400 "
         href={props.href} 
         target={"_blank"}>
           {props.children}
