@@ -1,12 +1,12 @@
 import { Sidebar } from "./components/Sidebar/Sidebar"
-import { LoadingScreen } from "./Pages/LoadingScreen"
+import { Home } from "./Pages/Home"
 
 
 function App() {
   return (
     <main className="md:flex">
       <Sidebar />
-      <LoadingScreen />
+      <Home />
     </main>
   
   )
