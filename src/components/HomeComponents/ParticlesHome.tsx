@@ -1,28 +1,24 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Engine } from "tsparticles-engine";
-import { LoadingScreen } from "./LoadingScreen";
 
 export function Home() {
   async function particlesInit(main: Engine){
-    console.log(main);
     await loadFull(main);
   };
-  function particlesLoaded(container: any) {
+  function particlesLoaded(_container: any) {
   };
-  return (
-    <>
-    { !particlesLoaded? 
-    <LoadingScreen /> 
-    : 
+  return ( 
     <Particles
+    className="w-screen"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
+        fullScreen: false,
         background: {
           color: {
-            value: "#121214",
+            value: "#09090A",
           },
         },
         fpsLimit: 120,
@@ -57,7 +53,7 @@ export function Home() {
             distance: 150,
             enable: true,
             opacity: 0.5,
-            width: 1,
+            width: 0.5,
           },
           collisions: {
             enable: true,
@@ -90,8 +86,7 @@ export function Home() {
           },
         },
         detectRetina: true,
-      }} />
-  }
-    </>
+      }} 
+    />
 )
 };
