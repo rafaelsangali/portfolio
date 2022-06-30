@@ -1,13 +1,8 @@
-import { Sidebar } from "./components/Sidebar/Sidebar"
-
+import { Routes } from "./Routes"
 
 function App() {
-  return (
-    <main className="md:flex">
-      <Sidebar />
-    </main>
-  
+  return ( 
+  <Routes />
   )
 }
-
 export default App

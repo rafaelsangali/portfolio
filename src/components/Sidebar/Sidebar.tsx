@@ -9,7 +9,7 @@ export function Sidebar() {
   return (
    <>
     <aside 
-    className={`text-2xl md:w-[250px] h-screen md:grid gap-4 bg-gray-700 md:border-x border-gray-600 place-content-center ${open ? "grid" : "hidden"}`}>
+    className={`text-2xl md:w-[250px] h-screen md:grid gap-4 bg-gray-700 md:border-x border-gray-600 place-content-center ${open ? "fixed w-screen grid z-40" : "hidden"}`}>
       <img
       className="h-16 w-16 md:h-32 md:w-32 rounded-full border-2 border-cyan-400 m-auto"
       src="https://avatars.githubusercontent.com/u/96629688?v=4" 
@@ -46,7 +46,7 @@ export function Sidebar() {
     <div className="bg-gray-700 h-[50px] w-screen top-0 absolute md:hidden">
       <List
       onClick={() => setOpen(!open)}
-      className={`text-cyan-400 absolute top-2 right-5 cursor-pointer duration-500 ${open? "rotate-[-90deg]" : ""}`} 
+      className={`text-cyan-400 absolute top-2 right-5 cursor-pointer duration-500 ${open? "rotate-[-90deg] z-40" : ""}`} 
       size={30} />
     </div>
     </>
