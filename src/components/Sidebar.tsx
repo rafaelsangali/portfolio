@@ -4,13 +4,13 @@ import { Links, MainTitle, Menus } from "../assets";
 
 
 export function Sidebar(){
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div>
       <aside
         className={` ${
           open ? "w-72" : "w-20 "
-        } bg-gray-700 border-x border-gray-600  h-screen p-5  pt-8 relative duration-300`}
+        } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-screen fixed md:relative duration-300`}
       >
         <img
           src={MainTitle.arrow}
@@ -23,7 +23,7 @@ export function Sidebar(){
             src={MainTitle.src}
             width={"20px"}
             className={`cursor-pointer duration-500 ${
-              open && "rotate-[360deg]"
+              open && "rotate-[720deg]"
             }`}
           />
 

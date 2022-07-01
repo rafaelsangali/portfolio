@@ -1,12 +1,15 @@
-import { Aperture } from "phosphor-react";
+import iconLoading from "../assets/icons/loading.svg"
+
 
 export function LoadingScreen() {
   return (
     <div 
     className="h-screen w-screen flex justify-center items-center">
-      <Aperture
-      className="text-cyan-400 animate-spin" 
-      size={40} 
+      <img 
+      src={iconLoading} 
+      alt="Icone Tela de Loading" 
+      className="animate-spin"
+      width={40} 
       />
     </div>
   )

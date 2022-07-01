@@ -1,13 +1,13 @@
-import iconLighting from "./iconLightning.svg"
-import iconArrow from "./arrow.svg"
-import iconHome from "./home.svg"
-import iconDownload from "./download.svg"
-import iconEmail from "./email.svg"
-import iconGithub from "./github.svg"
-import iconLinkedin from "./linkedin.svg"
-import iconStar from "./star.svg"
-import iconProjects from "./allProjects.svg"
-import iconAbout from "./about.svg"
+import iconLighting from "./icons/iconLightning.svg"
+import iconArrow from "./icons/arrow.svg"
+import iconHome from "./icons/home.svg"
+import iconDownload from "./icons/download.svg"
+import iconEmail from "./icons/email.svg"
+import iconGithub from "./icons/github.svg"
+import iconLinkedin from "./icons/linkedin.svg"
+import iconStar from "./icons/star.svg"
+import iconProjects from "./icons/allProjects.svg"
+import iconAbout from "./icons/about.svg"
 
 
 
