@@ -1,4 +1,4 @@
-import { Content } from "../components/HomeComponents/Content";
+import { ContentHome } from "../components/HomeComponents/ContentHome";
 import { Sidebar } from "../components/Sidebar";
 
 
@@ -6,7 +6,7 @@ export function Home() {
   return (
     <main className="flex" >
       <Sidebar />
-      <Content />
+      <ContentHome />
       
     </main>
   )

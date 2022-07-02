@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Links, MainTitle, Menus } from "../assets";
+import { path } from "../utils/ButtonBackgroung";
 
 
 export function Sidebar(){
   const [open, setOpen] = useState(false);
+
   return (
     <div>
       <aside
@@ -40,11 +42,13 @@ export function Sidebar(){
               <Link
                 to={Menu.href}
                 key={index}
+                
                 className={`flex  rounded-md p-2 cursor-pointer hover:bg-cyan-400 transition-colors text-sm items-center gap-x-4 
-                ${Menu.gap ? "mt-9" : "mt-2"} ${
-                  index === 0 && "bg-light-white"
-                } `}
-              >
+                ${Menu.gap ? "mt-9" : "mt-2"} 
+                ${index === 0 && "bg-light-white"}
+                ${Menu.title.toLowerCase() == path ? "bg-cyan-400 " : ""}
+                `}
+              > 
                 <img width={20} src={Menu.src} />
                 <span className={`${!open && "hidden"} origin-left duration-200`}>
                   {Menu.title}

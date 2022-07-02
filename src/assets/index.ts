@@ -16,8 +16,8 @@ export const MainTitle = { title: "Web Developer", src: iconLighting, arrow: ico
 export const Menus = [
   { title: "Home", src: iconHome, href: "/" },
   { title: "About", src: iconAbout, gap: true , href: "/about"},
-  { title: "Top Projetcs ", src: iconStar , href: "/top-projects"},
-  { title: "All Projetcs", src: iconProjects, href: "/all-projects" },
+  { title: "Top Projects", src: iconStar , href: "/top-projects"},
+  { title: "All Projects", src: iconProjects, href: "/all-projects" },
 ];
 
 export const Links = [

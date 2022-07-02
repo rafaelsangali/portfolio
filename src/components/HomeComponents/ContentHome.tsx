@@ -1,4 +1,4 @@
-export function Content() {
+export function ContentHome() {
   return (
     <div className="grid gap-14 w-screen h-screen ml-[80px] content-center text-center items-center md:flex md:text-left md:m-0 md:justify-center">
       <img
