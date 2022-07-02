@@ -7,7 +7,6 @@ export function Home() {
     <main className="flex" >
       <Sidebar />
       <ContentHome />
-      
     </main>
   )
 }
