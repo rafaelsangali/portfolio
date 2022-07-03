@@ -1,4 +1,4 @@
-import { ContentAbout } from "../components/AboutComponents/ContentAbout";
+import  ContentAbout  from "../components/AboutComponents/ContentAbout";
 import { Sidebar } from "../components/Sidebar";
 
 export function About() {
