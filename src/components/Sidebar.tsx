@@ -1,20 +1,13 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Links, MainTitle, Menus } from "../assets";
+import { transformPath } from "../utils/ButtonBackgroung";
 
 
 export function Sidebar(){
   const [open, setOpen] = useState(false);
+  const path = transformPath()
   
-  let path = ""
-  function transformPath(){
-    useLocation().pathname == "/" ?
-    path = "home" : path = useLocation().pathname.replace("/","").replace("-"," ")
-    console.log(path);
-  }
-  transformPath()
-  
-
   return (
     <div>
       <aside
@@ -51,7 +44,7 @@ export function Sidebar(){
                 to={Menu.href}
                 key={index}
                 
-                className={`flex justify-center rounded-md p-2 cursor-pointer hover:bg-cyan-400 transition-colors text-sm items-center gap-x-4 
+                className={`flex rounded-md p-2 cursor-pointer hover:bg-cyan-400 transition-colors text-sm items-center gap-x-4 
                 ${Menu.gap ? "mt-9" : "mt-2"} 
                 ${index === 0 && "bg-light-white"}
                 ${Menu.title.toLowerCase() == path ? "bg-cyan-400 " : ""}
@@ -69,10 +62,9 @@ export function Sidebar(){
                 key={index}
                 href={Link.href}
                 target={Link.target}
-                className={`flex justify-center rounded-md p-2 cursor-pointer hover:bg-cyan-400 transition-colors text-sm items-center gap-x-4 
-                ${Link.gap ? "mt-9" : "mt-2"} ${
-                  index === 0 && "bg-light-white"
-                } `}
+                className={`flex rounded-md p-2 cursor-pointer hover:bg-cyan-400 transition-colors text-sm items-center gap-x-4 
+                ${Link.gap ? "mt-9" : "mt-2"} 
+                `}
               >
                 <img width={20} src={Link.src} />
                 <span className={`${!open && "hidden"} origin-left duration-200`}>
