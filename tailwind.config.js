@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{tsx, ts}',
+    './src/**/*.{tsx,ts}',
   ],
+  mode: 'jit',
+   purge: [
+     './src/**/*.{ts,tsx}',
+   ],
   theme: {
     extend: {
       fontFamily:{
@@ -30,11 +34,6 @@ module.exports = {
       },
       animation: {
         shine: "shine 1s",
-      },
-      keyframes: {
-        shine: {
-          "100%": { left: "125%" },
-        },
       },
     },
   },
