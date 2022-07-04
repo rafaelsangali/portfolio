@@ -3,10 +3,6 @@ module.exports = {
   content: [
     './src/**/*.{tsx,ts}',
   ],
-  mode: 'jit',
-   purge: [
-     './src/**/*.{ts,tsx}',
-   ],
   theme: {
     extend: {
       fontFamily:{

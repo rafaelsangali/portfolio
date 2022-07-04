@@ -8,8 +8,21 @@ import iconLinkedin from "./icons/linkedin.svg"
 import iconStar from "./icons/star.svg"
 import iconProjects from "./icons/allProjects.svg"
 import iconAbout from "./icons/about.svg"
+import iconGlobe from "./icons/globe.svg"
 
-
+export const icons = {
+  iconLighting: iconLighting,
+  iconArrow: iconArrow,
+  iconHome: iconHome,
+  iconDownload: iconDownload,
+  iconEmail: iconEmail,
+  iconGithub: iconGithub,
+  iconLinkedin: iconLinkedin,
+  iconStar: iconStar,
+  iconProjects: iconProjects,
+  iconAbout: iconAbout,
+  iconGlobe: iconGlobe,
+}
 
 export const MainTitle = { title: "Web Developer", src: iconLighting, arrow: iconArrow}
 

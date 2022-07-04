@@ -6,10 +6,10 @@ import { TopProjetcs } from "../../Pages/TopProjetcs";
 // import { AnimatePresence } from "framer-motion"
 
 export function AnimatedRoutes(){
-  const location = useLocation()
+  // const location = useLocation()
   return(
     // <AnimatePresence>
-      <Routes location={location} key={location.pathname}>
+      <Routes>
         <RouteWrapper path="/" element={<Home />} />
         <RouteWrapper path="/about" element={<About />} />
         <RouteWrapper path="/top-projects" element={<TopProjetcs />} />

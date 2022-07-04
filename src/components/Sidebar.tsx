@@ -9,11 +9,10 @@ export function Sidebar(){
   const path = transformPath()
   
   return (
-    <div>
       <aside
         className={` ${
           open ? "w-72" : "w-20 "
-        } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-screen fixed md:relative duration-300`}
+        } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-full md:h-full fixed md:rela tive duration-300`}
       >
         <img
           src={MainTitle.arrow}
@@ -73,8 +72,7 @@ export function Sidebar(){
               </a>
             ))}
         </nav>
-      </aside>
-    </div>
+      </aside>  
   );
 };
 
