@@ -1,4 +1,5 @@
 import { icons } from "../../assets";
+import curriculo from "../../assets/files/curriculoRafaelSangali.pdf"
 
 export const MainTitle = {
   title: "Web Developer",
@@ -37,7 +38,7 @@ export const Links = [
     title: "Download CV",
     src: icons.iconDownload,
     gap: true,
-    href: "", // add curriculum file
-    download: "curriculumRafael",
+    href: curriculo, 
+    download: "curriculoRafaelSangali",
   },
 ];

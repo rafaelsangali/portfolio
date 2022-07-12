@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import TransitionMain from "../../components/TransitionMain";
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
             <strong>Rafael Sangali</strong>
           </p>
           <p>
-            Um <strong>Desenvolvedor Web Front-End </strong>apaixonado por criar
+            Um <strong>Desenvolvedor Web Front-End </strong>criando soluções com
             experiências interativas na web.
           </p>
         </div>

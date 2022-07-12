@@ -4,7 +4,7 @@ import { projects } from "./objectProjects";
 
 export default function TopProjetcs() {
   return (
-    <TransitionMain className=" ml-[80px] flex flex-wrap">
+    <TransitionMain className=" ml-[80px] flex flex-wrap justify-center lg:justify-evenly">
       {projects.map((project, index) => (
         <CardTopProject
           key={project.title + index}

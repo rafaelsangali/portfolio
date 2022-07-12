@@ -33,7 +33,7 @@ export default function CardAllProjects(props: ICardTopProjectsProps) {
           </span>
         ))}
       </div>
-      <span className="text-xs text-zinc-600 flex justify-center p-2">
+      <span className="text-[0.5rem] sm:text-xs text-zinc-600 flex justify-center p-2">
         *Ao clicar será redirecionado ao repositório*
       </span>
     </motion.a>
