@@ -19,20 +19,23 @@ export default function CardAllProjects(props: ICardTopProjectsProps) {
     >
       <div className="p-6 ">
         <h3 className="text-white text-xl font-medium mb-2">{props.title}</h3>
-        <p className="h-[11ch] text-zinc-300 text-base mb-4 text-ellipsis overflow-hidden">
+        <p className="h-[11ch] text-zinc-300 text-base text-ellipsis overflow-hidden">
           {props.description}...
         </p>
-        <div className="px-6 pt-4 pb-2">
-          {props.topics.map((topic, index) => (
-            <span
-              key={topic + index}
-              className="inline-block bg-gray-500  rounded-full px-3 py-1 text-sm font-semibold text-zinc-300 hover:bg-gray-600 mr-2 mb-2"
-            >
-              {topic}
-            </span>
-          ))}
-        </div>
       </div>
+      <div className="px-4  pb-2">
+        {props.topics.map((topic, index) => (
+          <span
+            key={topic + index}
+            className="inline-block bg-gray-500  rounded-full px-3 py-1 text-sm font-semibold text-zinc-300 hover:bg-gray-600 mr-2 mb-2"
+          >
+            {topic}
+          </span>
+        ))}
+      </div>
+      <span className="text-xs text-zinc-600 flex justify-center p-2">
+        *Ao clicar será redirecionado ao repositório*
+      </span>
     </motion.a>
   );
 }
