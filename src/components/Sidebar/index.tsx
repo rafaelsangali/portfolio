@@ -11,7 +11,7 @@ export default function Sidebar() {
     <aside
       className={` ${
         open ? "w-72" : "w-20 "
-      } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-full md:h-full fixed md:rela tive duration-300`}
+      } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-full md:h-full fixed z-10 duration-300`}
     >
       <img
         src={MainTitle.arrow}

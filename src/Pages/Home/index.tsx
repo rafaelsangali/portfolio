@@ -1,6 +1,8 @@
+import TransitionMain from "../../components/TransitionMain";
+
 export default function Home() {
   return (
-    <main className="flex">
+    <TransitionMain className="flex">
       <div className="grid gap-14 w-screen h-screen ml-[80px] content-center text-center items-center md:flex md:text-left md:m-0 md:justify-center">
         <img
           className="w-52 mx-auto md:m-3 border-2 rounded-full border-cyan-700"
@@ -17,6 +19,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </main>
+    </TransitionMain>
   );
 }

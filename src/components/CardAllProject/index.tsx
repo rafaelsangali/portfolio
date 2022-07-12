@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { icons } from "../../assets";
 
 interface ICardTopProjectsProps {
@@ -6,13 +7,18 @@ interface ICardTopProjectsProps {
   url: string;
 }
 
-export default function CardTopProjects(props: ICardTopProjectsProps) {
+export default function CardAllProjects(props: ICardTopProjectsProps) {
   return (
-    <div className="rounded-lg shadow-lg bg-gray-700 border border-gray-500 m-5 h-auto w-80 break-all">
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      onHoverStart={(e) => {}}
+      onHoverEnd={(e) => {}}
+      className="rounded-lg shadow-lg bg-gray-700 border border-gray-500 m-5 h-auto w-80 break-all"
+    >
       <div className="p-6 ">
         <h3 className="text-white text-xl font-medium mb-2">{props.title}</h3>
         <p className="h-[11ch] text-zinc-300 text-base mb-4 text-ellipsis overflow-hidden">
-          {props.description}
+          {props.description}...
         </p>
         <div className="flex  w-auto justify-center">
           <a
@@ -25,6 +31,6 @@ export default function CardTopProjects(props: ICardTopProjectsProps) {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

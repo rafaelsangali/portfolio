@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
+import TransitionMain from "../../components/TransitionMain";
 import { about, skills } from "./objectTextSkills";
 
 export default function About() {
   return (
-    <main className="flex">
+    <TransitionMain className="flex">
       <div className="flex-col w-screen ml-[80px] mr-2 md:mr-7 md:flex md:flex-row">
         <section className="py-8 px-4 container">
           <div className="flex py-5 items-center">
@@ -25,14 +27,14 @@ export default function About() {
             <div key={element.skillTitle + index} className="my-5">
               <span className="text-lg gap-2">{element.skillTitle}</span>
               <div className=" bg-gray-200 rounded-full h-[5px]">
-                <div
+                <motion.div
                   className={`${element.percent} ${element.color} h-[5px] rounded-full`}
-                ></div>
+                ></motion.div>
               </div>
             </div>
           ))}
         </section>
       </div>
-    </main>
+    </TransitionMain>
   );
 }
