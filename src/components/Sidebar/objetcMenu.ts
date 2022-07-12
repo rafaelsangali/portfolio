@@ -37,7 +37,7 @@ export const Links = [
     title: "Download CV",
     src: icons.iconDownload,
     gap: true,
-    href: "",
-    download: icons.iconDownload,
+    href: "", // add curriculum file
+    download: "curriculumRafael",
   },
 ];

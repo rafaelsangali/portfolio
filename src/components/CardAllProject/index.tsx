@@ -13,7 +13,7 @@ export default function CardAllProjects(props: ICardTopProjectsProps) {
       whileHover={{ scale: 1.1 }}
       onHoverStart={(e) => {}}
       onHoverEnd={(e) => {}}
-      className="rounded-lg shadow-lg bg-gray-700 border border-gray-500 m-5 h-auto w-80 break-all"
+      className="rounded-lg shadow-lg bg-gray-700 border border-gray-500 m-5 h-auto w-80 break-all shadow-cyan-700 hover:shadow-cyan-300"
     >
       <div className="p-6 ">
         <h3 className="text-white text-xl font-medium mb-2">{props.title}</h3>

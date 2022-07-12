@@ -10,6 +10,8 @@ import iconProjects from "./icons/allProjects.svg";
 import iconAbout from "./icons/about.svg";
 import iconGlobe from "./icons/globe.svg";
 import iconLoading from "./icons/loading.svg";
+import imageSimplesVoip from "./images/simplesvoip.png";
+import imageIgniteLab from "./images/ignitelab.png"
 
 export const icons = {
   iconLighting: iconLighting,
@@ -25,3 +27,8 @@ export const icons = {
   iconGlobe: iconGlobe,
   iconLoading: iconLoading,
 };
+
+export const images = {
+  imageSimplesVoip: imageSimplesVoip,
+  imageIgniteLab: imageIgniteLab,
+}
