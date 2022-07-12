@@ -12,6 +12,8 @@ import iconGlobe from "./icons/globe.svg";
 import iconLoading from "./icons/loading.svg";
 import imageSimplesVoip from "./images/simplesvoip.png";
 import imageIgniteLab from "./images/ignitelab.png"
+import imageSoundGarden from "./images/soundgarden.png"
+import imageLavie from "./images/lavie.png"
 
 export const icons = {
   iconLighting: iconLighting,
@@ -31,4 +33,6 @@ export const icons = {
 export const images = {
   imageSimplesVoip: imageSimplesVoip,
   imageIgniteLab: imageIgniteLab,
+  imageSoundGarden: imageSoundGarden,
+  imageLavie: imageLavie,
 }

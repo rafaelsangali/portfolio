@@ -1,15 +1,17 @@
 import { motion } from "framer-motion";
-import { icons } from "../../assets";
 
 interface ICardTopProjectsProps {
   title: string;
   description?: string;
   url: string;
+  topics: Array<string>;
 }
 
 export default function CardAllProjects(props: ICardTopProjectsProps) {
   return (
-    <motion.div
+    <motion.a
+      href={props.url}
+      target={"_blank"}
       whileHover={{ scale: 1.1 }}
       onHoverStart={(e) => {}}
       onHoverEnd={(e) => {}}
@@ -20,17 +22,17 @@ export default function CardAllProjects(props: ICardTopProjectsProps) {
         <p className="h-[11ch] text-zinc-300 text-base mb-4 text-ellipsis overflow-hidden">
           {props.description}...
         </p>
-        <div className="flex  w-auto justify-center">
-          <a
-            target={"_blank"}
-            className="flex rounded-md p-2 cursor-pointer bg-cyan-600 transition-colors text-sm justify-center font-semibold m-1 w-[80px] hover:bg-cyan-400"
-            href={props.url}
-          >
-            <img className="w-[20px] h-[20px] mr-2" src={icons.iconGithub} />
-            Repo
-          </a>
+        <div className="px-6 pt-4 pb-2">
+          {props.topics.map((topic, index) => (
+            <span
+              key={topic + index}
+              className="inline-block bg-gray-500  rounded-full px-3 py-1 text-sm font-semibold text-zinc-300 hover:bg-gray-600 mr-2 mb-2"
+            >
+              {topic}
+            </span>
+          ))}
         </div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 }

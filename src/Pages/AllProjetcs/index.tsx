@@ -7,6 +7,7 @@ interface IRepository {
   name: string;
   description: string;
   html_url: string;
+  topics: Array<string>
 }
 
 export default function AllProjetcs() {
@@ -25,6 +26,7 @@ export default function AllProjetcs() {
             title={repo.name}
             description={repo.description}
             url={repo.html_url}
+            topics={repo.topics}
           />
         ))
       )}
