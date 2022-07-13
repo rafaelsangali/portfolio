@@ -16,7 +16,7 @@ export default function TabContent(props: ITabContentProps) {
       animate={toggle == props.index ? { opacity: [0.7, 1] } : {}}
       className={
         toggle == props.index
-          ? "h-60 p-4 bg-zinc-900 border border-zinc-700 rounded-b-xl"
+          ? "h-auto p-4 bg-zinc-900 border border-zinc-700 rounded-b-xl"
           : "hidden"
       }
     >

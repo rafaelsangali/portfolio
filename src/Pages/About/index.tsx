@@ -3,7 +3,7 @@ import TabContent from "../../components/Tabs/TabContent";
 import TabNav from "../../components/Tabs/TabNav";
 import TransitionMain from "../../components/TransitionMain";
 import { TabsProvider } from "../../contexts/TabsContext";
-import { about } from "./objectTextSkills";
+import { about, skills } from "./objectTextSkills";
 
 export default function About() {
   return (
@@ -30,11 +30,22 @@ export default function About() {
             <TabsProvider>
               <>
                 <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500">
-                  <TabNav index={0} img={icons.iconEmail} />
-                  <TabNav index={1} img={icons.iconGlobe} />
+                  {skills.map((nav, index) => (
+                    <TabNav
+                      key={nav.title + index}
+                      index={index}
+                      img={nav.img}
+                    />
+                  ))}
                 </ul>
-                <TabContent title={"Html"}index={0} text={"conteudo 1"} />
-                <TabContent title={"Css"}index={1} text={"conteudo 2"} />
+                {skills.map((content, index) => (
+                  <TabContent
+                    key={content.title + index}
+                    title={content.title}
+                    index={index}
+                    text={content.text}
+                  />
+                ))}
               </>
             </TabsProvider>
           </div>

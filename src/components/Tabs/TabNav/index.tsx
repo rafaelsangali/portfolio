@@ -8,7 +8,7 @@ interface ITabNavProps {
 }
 
 export default function TabNav(props: ITabNavProps) {
-  const {toggle, setToggle} = useContext(TabsContext)
+  const { toggle, setToggle } = useContext(TabsContext);
   return (
     <li
       className={`mr-2 rounded-t-lg cursor-pointer ${
@@ -22,7 +22,7 @@ export default function TabNav(props: ITabNavProps) {
         onHoverEnd={(e) => {}}
         src={props.img}
         width={40}
-        className="inline-block p-1"
+        className="inline-block p-2"
       />
     </li>
   );
