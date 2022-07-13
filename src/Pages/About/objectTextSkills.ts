@@ -10,12 +10,5 @@ export const about = {
 };
 
 export const skills = [
-  { skillTitle: "Html", color: "bg-red-600", percent: "80%" },
-  { skillTitle: "CSS", color: "bg-blue-600", percent: "75%" },
-  { skillTitle: "Javascript", color: "bg-yellow-600", percent: "55%" },
-  { skillTitle: "Typescript", color: "bg-indigo-600", percent: "35%" },
-  { skillTitle: "Node.JS", color: "bg-lime-600", percent: "40%" },
-  { skillTitle: "React", color: "bg-cyan-600", percent: "45%" },
-  { skillTitle: "Tailwind", color: "bg-teal-600", percent: "50%" },
-  { skillTitle: "Agile and Scrum", color: "bg-purple-600", percent: "80%" },
-];
+  {img:"" , title:"",text:""},
+]

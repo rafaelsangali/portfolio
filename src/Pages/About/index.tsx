@@ -1,6 +1,9 @@
-import { motion } from "framer-motion";
+import { icons } from "../../assets";
+import TabContent from "../../components/Tabs/TabContent";
+import TabNav from "../../components/Tabs/TabNav";
 import TransitionMain from "../../components/TransitionMain";
-import { about, skills } from "./objectTextSkills";
+import { TabsProvider } from "../../contexts/TabsContext";
+import { about } from "./objectTextSkills";
 
 export default function About() {
   return (
@@ -23,20 +26,18 @@ export default function About() {
             <h2 className="font-extrabold text-2xl my-5 mr-2">Skills</h2>
             <span className="flex-grow border-t border-gray-300"></span>
           </div>
-          {skills.map((element, index) => (
-            <div key={element.skillTitle + index} className="my-5">
-              <span className="text-lg gap-2">{element.skillTitle}</span>
-              <div className=" bg-gray-200 rounded-full h-[5px]">
-                <motion.div
-                  animate={{
-                    width: ["0%", `${element.percent}`],
-                  }}
-                  transition={{ duration: 1.5, ease: "linear" }}
-                  className={`${element.color} h-[5px] rounded-full`}
-                ></motion.div>
-              </div>
-            </div>
-          ))}
+          <div>
+            <TabsProvider>
+              <>
+                <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500">
+                  <TabNav index={0} img={icons.iconEmail} />
+                  <TabNav index={1} img={icons.iconGlobe} />
+                </ul>
+                <TabContent title={"Html"}index={0} text={"conteudo 1"} />
+                <TabContent title={"Css"}index={1} text={"conteudo 2"} />
+              </>
+            </TabsProvider>
+          </div>
         </section>
       </div>
     </TransitionMain>
