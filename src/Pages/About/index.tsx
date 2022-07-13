@@ -28,7 +28,11 @@ export default function About() {
               <span className="text-lg gap-2">{element.skillTitle}</span>
               <div className=" bg-gray-200 rounded-full h-[5px]">
                 <motion.div
-                  className={`${element.percent} ${element.color} h-[5px] rounded-full`}
+                  animate={{
+                    width: ["0%", `${element.percent}`],
+                  }}
+                  transition={{ duration: 1.5, ease: "linear" }}
+                  className={`${element.color} h-[5px] rounded-full`}
                 ></motion.div>
               </div>
             </div>
