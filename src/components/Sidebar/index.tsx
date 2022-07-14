@@ -4,7 +4,7 @@ import { transformPath } from "../../utils/changePathToRedirect";
 import { Links, MainTitle, Menus } from "./objetcMenu";
 
 export default function Sidebar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const path = transformPath();
 
   return (
