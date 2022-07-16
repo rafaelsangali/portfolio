@@ -10,8 +10,8 @@ export const MainTitle = {
 export const Menus = [
   { title: "Home", src: icons.iconHome, href: "/" },
   { title: "About", src: icons.iconAbout, gap: true, href: "/about" },
-  { title: "Top Projects", src: icons.iconStar, href: "/top-projects" },
-  { title: "All Projects", src: icons.iconProjects, href: "/all-projects" },
+  { title: "Top Projetcs ", src: icons.iconStar, href: "/top-projects" },
+  { title: "All Projetcs", src: icons.iconProjects, href: "/all-projects" },
 ];
 
 export const Links = [

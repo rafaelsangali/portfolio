@@ -11,7 +11,7 @@ export default function Sidebar() {
     <aside
       className={` ${
         open ? "w-72" : "w-20 "
-      } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-full md:h-full fixed z-10 duration-300`}
+      } bg-gray-700 border-x border-gray-600  p-5  pt-8 h-full md:h-full fixed z-10 duration-300 whitespace-nowrap`}
     >
       <img
         src={MainTitle.arrow}
@@ -27,7 +27,7 @@ export default function Sidebar() {
         />
 
         <h1
-          className={`text-white origin-left text-2xl duration-200 ${
+          className={`text-white origin-left text-2xl duration-200 delay-[50ms] ${
             !open && "scale-0"
           }`}
         >
@@ -46,9 +46,13 @@ export default function Sidebar() {
                 `}
           >
             <img width={20} src={Menu.src} />
-            <span className={`${!open && "hidden"} origin-left duration-200`}>
+            <h2
+              className={`origin-left duration-200 delay-[50ms] ${
+                !open && "scale-0"
+              }`}
+            >
               {Menu.title}
-            </span>
+            </h2>
           </Link>
         ))}
         {Links.map((Link, index) => (
@@ -62,7 +66,11 @@ export default function Sidebar() {
                 `}
           >
             <img width={20} src={Link.src} />
-            <span className={`${!open && "hidden"} origin-left duration-200`}>
+            <span
+              className={`origin-left duration-200 delay-[50ms] ${
+                !open && "scale-0"
+              }`}
+            >
               {Link.title}
             </span>
           </a>
