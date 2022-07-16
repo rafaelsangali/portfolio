@@ -1,5 +1,5 @@
 import { icons } from "../../assets";
-import curriculo from "../../assets/files/curriculoRafaelSangali.pdf"
+import curriculo from "../../assets/files/curriculoRafaelSangali.pdf";
 
 export const MainTitle = {
   title: "Web Developer",
@@ -23,7 +23,7 @@ export const Links = [
     target: "_blank",
   },
   {
-    title: "Likedin",
+    title: "Linkedin",
     src: icons.iconLinkedin,
     href: "https://www.linkedin.com/in/rafael-sangali-0b2675229/",
     target: "_blank",
@@ -38,7 +38,7 @@ export const Links = [
     title: "Download CV",
     src: icons.iconDownload,
     gap: true,
-    href: curriculo, 
+    href: curriculo,
     download: "curriculoRafaelSangali",
   },
 ];
