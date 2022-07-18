@@ -16,14 +16,14 @@ export default function Sidebar() {
       <img
         src={MainTitle.arrow}
         className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
-           rounded-full bg-white ${!open && "rotate-180"}`}
+           rounded-full bg-white hover:scale-110 transition-transform ${!open && "rotate-180"}`}
         onClick={() => setOpen(!open)}
       />
       <div className="flex gap-x-3 items-center">
         <img
           src={MainTitle.src}
           width={"20px"}
-          className={`cursor-pointer duration-500 ${open && "rotate-[720deg]"}`}
+          className={`duration-500 ${open && "rotate-[720deg]"}`}
         />
 
         <h1
