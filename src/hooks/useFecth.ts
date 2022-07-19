@@ -17,5 +17,5 @@ export default function useFecth<T = unknown>(url: string) {
       })
       .finally(() => setIsFecthing(false));
   }, []);
-  return { data , isFecthing };
+  return { data, isFecthing };
 }
